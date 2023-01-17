@@ -23,3 +23,5 @@ int MaxDigit(int num)  // num = number
     if (firstDigit > secondDigit) return firstDigit;
     return secondDigit;
 }
+
+// int max = a > b? a: b
