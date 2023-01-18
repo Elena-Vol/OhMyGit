@@ -6,7 +6,25 @@
 7 -> да
 1 -> нет */
 
-string PrintDay(int number)
+bool PrintDay(int number)
+{
+    return number == 6 || number == 7;
+}
+
+Console.Write("Введите число от 1 до 7:  ");
+int num = Convert.ToInt16(Console.ReadLine());
+
+bool result = PrintDay(num);
+
+if (num < 1 || num > 7 )  Console.WriteLine("Введено некорректное число");
+else if (result) Console.WriteLine("да"); 
+else Console.WriteLine("нет");     
+    
+
+
+
+
+/* string PrintDay(int number)
 {
    if (number < 1 || number > 7 ) return "Введено некорректное число";
     else if (number == 1) return $"{number} - не является выходным днем";
@@ -22,7 +40,7 @@ Console.Write("Введите число от 1 до 7  ");
 int num = Convert.ToInt16(Console.ReadLine());
 
 string day = PrintDay(num);
-Console.Write(day);
+Console.Write(day); */
 
 
 
