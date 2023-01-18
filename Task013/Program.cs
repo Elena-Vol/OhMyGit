@@ -29,10 +29,11 @@ else
 Console.Write("Введите трехзначное число ");
 int num = Convert.ToInt32(Console.ReadLine());
 
-if (num < 99 ) Console.Write("Третьей цифры нет");
+int module = Math.Abs(num);
+if (module < 99 ) Console.Write("Третьей цифры нет");
 else 
 {
-    int result = ThirdDigit (num);
+    int result = ThirdDigit (module);
     Console.WriteLine($"третья цифра этого числа: {result}");
 }
 
