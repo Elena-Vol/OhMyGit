@@ -13,11 +13,13 @@ int GetNumber (int num)
 }
 
 Console.Write("Введите трехзначное число ");
-int numder = Convert.ToInt32(Console.ReadLine());
+int number = Convert.ToInt32(Console.ReadLine());
 
-if (numder > 99 && numder <1000)
+int module = Math.Abs(number);
+
+if (module > 99 && module <1000)
 {
-    int midlDigit = GetNumber (numder);
+    int midlDigit = GetNumber (module);
 Console.Write(midlDigit);
 }
 else Console.Write("Введено не корректное число");
