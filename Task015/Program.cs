@@ -21,8 +21,6 @@ else if (result) Console.WriteLine("да");
 else Console.WriteLine("нет");     
     
 
-//
-
 
 /* string PrintDay(int number)
 {
